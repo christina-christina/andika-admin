@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "583850654027",
+    "project_id": "andika-72c52",
+    "storage_bucket": "andika-72c52.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:583850654027:android:e4ad17afb0a19c86e890ce",
+        "android_client_info": {
+          "package_name": "com.platzi.admin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "583850654027-fcui1d1pcu6es19b5no261s9v4sdormj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD3se-QQpW49c2sQ3cO6RGDhyqL61DqnUQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "583850654027-fcui1d1pcu6es19b5no261s9v4sdormj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

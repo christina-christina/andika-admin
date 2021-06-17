@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/border_gray"
+    app:cardCornerRadius="7dp"
+    android:layout_marginTop="8dp">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="14dp">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_marginTop="5dp"
+            android:id="@+id/tv_image"
+            android:elevation="0dp"
+            android:background="@drawable/ic_give_money_blue"
+            android:padding="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+        <TextView
+            android:id="@+id/tv_nominal"
+            style="@style/TextViewRiwayat"
+            android:text="Rp100000"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@id/tv_image"
+            />
+
+
+        <TextView
+            android:id="@+id/tv_status"
+            style="@style/TextViewDescRiwayat"
+            android:text="Menunggu konfirmasi"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorPrimary"
+            app:layout_constraintTop_toBottomOf="@id/tv_nominal"
+            app:layout_constraintStart_toEndOf="@id/tv_image"
+            app:layout_constraintBottom_toBottomOf="parent"
+            />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

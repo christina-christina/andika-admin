@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/userFragment">
+
+    <fragment
+        android:id="@+id/userFragment"
+        android:label="user_beranda"
+        tools:layout="@layout/fragment_user"
+        android:name="com.platzi.admin.view.ui.user.UserFragment">
+        <action
+            android:id="@+id/action_userFragment_to_userDetailFragment"
+            app:destination="@id/userDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/peminjamanFragment"
+        android:label="peminjmaan_akun"
+        tools:layout="@layout/fragment_peminjaman"
+        android:name="com.platzi.admin.view.ui.peminjaman.PeminjamanFragment">
+        <action
+            android:id="@+id/action_peminjamanFragment_to_peminjamanDetailFragment"
+            app:destination="@id/peminjamanDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/pembayaranFragment"
+        android:label="pembayaran_akun"
+        tools:layout="@layout/fragment_pembayaran2"
+        android:name="com.platzi.admin.view.ui.pembayaran.PembayaranFragment">
+        <action
+            android:id="@+id/action_pembayaranFragment_to_pembayaranDetailFragment"
+            app:destination="@id/pembayaranDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/userDetailFragment"
+        android:name="com.platzi.admin.view.ui.user.UserDetailFragment"
+        android:label="UserDetailFragment" >
+        <argument
+            android:name="user"
+            app:argType="com.platzi.admin.model.User" />
+    </fragment>
+    <fragment
+        android:id="@+id/pembayaranDetailFragment"
+        android:name="com.platzi.admin.view.ui.pembayaran.PembayaranDetailFragment"
+        android:label="PembayaranDetailFragment">
+        <argument
+            android:name="pembayaran"
+            app:argType="com.platzi.admin.model.Pembayaran" />
+        <action
+            android:id="@+id/action_pembayaranDetailFragment_to_pembayaranFragment"
+            app:destination="@id/pembayaranFragment" />
+        <action
+            android:id="@+id/action_pembayaranDetailFragment_to_userDetailFragment"
+            app:destination="@id/userDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/peminjamanDetailFragment"
+        android:name="com.platzi.admin.view.ui.peminjaman.PeminjamanDetailFragment"
+        android:label="PeminjamanDetailFragment" >
+        <argument
+            android:name="pinjaman"
+            app:argType="com.platzi.admin.model.Pinjaman" />
+        <action
+            android:id="@+id/action_peminjamanDetailFragment_to_peminjamanFragment"
+            app:destination="@id/peminjamanFragment" />
+        <action
+            android:id="@+id/action_peminjamanDetailFragment_to_userDetailFragment"
+            app:destination="@id/userDetailFragment" />
+    </fragment>
+</navigation>

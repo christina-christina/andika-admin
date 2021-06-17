@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="height_logo">120dp</dimen>
+    <dimen name="height_toolbar">30dp</dimen>
+    <dimen name="radius_card">20dp</dimen>
+    <dimen name="height_image_card">150dp</dimen>
+    <dimen name="text_size_title">20sp</dimen>
+    <dimen name="text_size_subtitle">15sp</dimen>
+
+
+    <dimen name="item_schedule_title">30sp</dimen>
+    <dimen name="item_schedule_subtitle">20sp</dimen>
+    <dimen name="margin_home_subtitle">10dp</dimen>
+</resources>

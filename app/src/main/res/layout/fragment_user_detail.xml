@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout"
+    android:scrollbars="none"
+    android:background="#FFFFFF">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:paddingBottom="20dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_nama_lengkap"
+            style="@style/TextViewPeminjaman"
+            android:text="Nama Lengkap"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/et_nama_lengkap"
+            style="@style/EditTextFormPeminjaman"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_nama_lengkap" />
+
+        <TextView
+            android:id="@+id/tv_no_hp"
+            style="@style/TextViewPeminjaman"
+            android:text="No. HP"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/et_nama_lengkap" />
+
+        <TextView
+            android:id="@+id/et_no_hp"
+            style="@style/EditTextFormPeminjaman"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_no_hp" />
+
+        <TextView
+            android:id="@+id/tv_nama_bank"
+            style="@style/TextViewPeminjaman"
+            android:text="Nama Bank"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/et_no_hp" />
+
+        <TextView
+            android:id="@+id/et_nama_bank"
+            style="@style/EditTextFormPeminjaman"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_nama_bank" />
+
+        <TextView
+            android:id="@+id/tv_no_rekening"
+            style="@style/TextViewPeminjaman"
+            android:text="No. Rekening"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/et_nama_bank" />
+
+        <TextView
+            android:id="@+id/et_no_rekening"
+            style="@style/EditTextFormPeminjaman"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_no_rekening" />
+
+
+        <TextView
+            android:id="@+id/tv_saldo"
+            style="@style/TextViewPeminjaman"
+            android:text="Saldo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/et_no_rekening" />
+
+        <TextView
+            android:id="@+id/et_saldo"
+            style="@style/EditTextFormPeminjaman"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_saldo" />
+
+
+        <TextView
+            android:id="@+id/tv_dicairkan"
+            style="@style/TextViewPeminjaman"
+            android:text="Dicairkan"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/et_saldo" />
+
+        <TextView
+            android:id="@+id/et_dicairkan"
+            style="@style/EditTextFormPeminjaman"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_dicairkan" />
+
+
+        <TextView
+            android:id="@+id/tv_tunggakan"
+            style="@style/TextViewPeminjaman"
+            android:text="Tunggakan"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/et_dicairkan" />
+
+        <TextView
+            android:id="@+id/et_tunggakan"
+            style="@style/EditTextFormPeminjaman"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_tunggakan" />
+
+        <TextView
+            android:id="@+id/tv_ktm"
+            style="@style/TextViewPeminjaman"
+            android:text="KTM"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/et_tunggakan" />
+
+
+        <ImageView
+            android:id="@+id/iv_ktm"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginTop="0dp"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_margin="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_ktm"
+            app:layout_constraintBottom_toTopOf="@id/tv_ktp"/>
+
+
+        <TextView
+            android:id="@+id/tv_ktp"
+            style="@style/TextViewPeminjaman"
+            android:text="KTP"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/iv_ktm" />
+
+        <ImageView
+            android:id="@+id/iv_ktp"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="0dp"
+            android:layout_margin="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/tv_proposal"
+            app:layout_constraintTop_toBottomOf="@id/tv_ktp"/>
+
+
+        <TextView
+            android:id="@+id/tv_proposal"
+            style="@style/TextViewPeminjaman"
+            android:text="Proposal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/tv_lihat_proposal"
+            app:layout_constraintTop_toBottomOf="@id/iv_ktp" />
+
+        <TextView
+            android:id="@+id/tv_lihat_proposal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_shape"
+            android:paddingRight="60dp"
+            android:text="Lihat Proposal"
+            android:padding="24dp"
+            style="@style/EditTextFormPeminjaman"
+            android:textColor="@android:color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_proposal"/>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

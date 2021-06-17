@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/userFragment"
+        android:title="User"
+        android:icon="@drawable/ic_person_icon"
+        app:showAsAction="withText"/>
+
+    <item
+        android:id="@+id/peminjamanFragment"
+        android:title="Peminjaman"
+        android:icon="@drawable/ic_list_alt_icon"
+        app:showAsAction="withText"/>
+
+    <item
+        android:id="@+id/pembayaranFragment"
+        android:title="Pembayaran"
+        android:icon="@drawable/ic_payment_icon"
+        app:showAsAction="withText"/>
+
+</menu>
